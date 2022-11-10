@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
+
+main {
+    border-radius: 2vh;
+    border: 1px inset black;
+    box-shadow: 5px 5px;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    word-wrap: break-word;
+    animation: curtains 0.75s ease-in-out;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    text-align: center;
+    margin-top: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5a142;
+    overflow-y: hidden;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* mom look i can center a div */
+
+.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#note {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    right: 0;
+    margin-right: 10px;
+}
+
+@keyframes curtains {
+    0% { margin-top: 150vh; }
+    100% { margin-top: 0px; }
+}
