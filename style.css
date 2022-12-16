@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
 
+main::after {
+    display: table;
+	clear: both;
+}
+
 main {
     border-radius: 2vh;
     border: 1px inset black;
     box-shadow: 5px 5px;
     width: 600px;
     height: 400px;
+    /* thank you stackoverflow */
+    background: linear-gradient(#000, #000) no-repeat center/1px 95%;
     background-color: white;
     word-wrap: break-word;
     animation: curtains 0.75s ease-in-out;
@@ -17,11 +24,11 @@ main {
 }
 
 body {
-    text-align: center;
     margin-top: auto;
     font-family: 'Roboto', sans-serif;
     background-color: #f5a142;
     overflow-y: hidden;
+    box-sizing: border-box;
 }
 
 img {
@@ -36,6 +43,12 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
 }
 
 #note {
