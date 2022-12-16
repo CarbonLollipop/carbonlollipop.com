@@ -6,7 +6,7 @@
       <title>404</title>
     </head>
     <body>
-      <h1 style="display: inline;">404</h1>
+	    <h1 style="display: inline;">error <s><?php echo rand(100, 999); ?>?????</s> 404</h1>
       <a href="/" style="display: inline;">take me home</a>
       <br>
       <img height="400" src="doh.png">
