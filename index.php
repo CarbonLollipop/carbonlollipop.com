@@ -35,7 +35,7 @@
 						<h2>MOTD</h2>
 						<div id="thoughts">
 							<?php
-								$conn = mysqli_connect("qqkcmtcxab", "qqkcmtcxab", "E4KMU8NfjU", "thoughtbook");
+								$conn = mysqli_connect("localhost", "qqkcmtcxab", "E4KMU8NfjU", "thoughtbook");
 
 								if (!$conn) {
 									die("Connection failed: " . mysqli_connect_error());
