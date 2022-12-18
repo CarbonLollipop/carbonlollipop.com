@@ -33,26 +33,28 @@
 					</div>
 					<div class="column">
 						<h2>MOTD</h2>
-						<div id="thoughts">
+						<small>coming soon</small>
+						<!--<div id="thoughts">
 							<?php
-								$conn = mysqli_connect("localhost", "qqkcmtcxab", "E4KMU8NfjU", "thoughtbook");
+								//$conn = mysqli_connect("localhost", "qqkcmtcxab", "E4KMU8NfjU", "thoughtbook");
 
-								if (!$conn) {
-									die("Connection failed: " . mysqli_connect_error());
-								}
+								//if (!$conn) {
+									//die("Connection failed: " . mysqli_connect_error());
+								//}
 
-								$query = "SELECT * FROM thoughtbook ORDER BY id DESC LIMIT 1";
-								$result = $conn->query($query);
-								$row = $result->fetch_assoc();
+								//$query = "SELECT * FROM thoughtbook ORDER BY id DESC LIMIT 1";
+								//$result = $conn->query($query);
+								//$row = $result->fetch_assoc();
 
-								echo "<q>" . $row["content"] . "</q><br><strong>" . $row["timestamp"] . "</strong>";
+								//echo "<q>" . $row["content"] . "</q><br><strong>" . $row["timestamp"] . "</strong>";
 
-								mysqli_close($conn);						
+								//mysqli_close($conn);						
 							?>
 						</div>
+						-->
 					</div>
 				</div>
-				<small id="note"><a href="todos.php">todos</a> <a href='thoughtbook.php'>past motds</a></small>
+				<small id="note"><a href="todos.php">todos</a><!-- <a href='thoughtbook.php'>past motds</a>--></small>
 			</main>
 		</body>
 	</html>
