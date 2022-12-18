@@ -13,7 +13,7 @@
     <?php
 
 // Connect to the database
-$conn = mysqli_connect("localhost", "root", "", "thoughtbook");
+$conn = mysqli_connect("localhost", "qqkcmtcxab", "E4KMU8NfjU", "qqkcmtcxab");
 
 // Check the connection
 if (!$conn) {
@@ -21,7 +21,7 @@ if (!$conn) {
 }
 
 // Select all thoughts from the table
-$query = "SELECT * FROM thoughts";
+$query = "SELECT * FROM thoughtbook";
 $result = mysqli_query($conn, $query);
 
 // Check if the query was successful
@@ -31,7 +31,7 @@ if ($result) {
         // Access the values in the row using the column names
         
         // Do something with the thought (e.g., print it to the screen)
-        echo "<q>" . $row['content'] . "</q><br><strong>" . $row["date"] . "</strong><br><br>";
+        echo "<q>" . $row['content'] . "</q><br><strong>" . $row["timestamp"] . "</strong><br><br>";
     }
 } else {
     echo "Error: " . $query . "<br>" . mysqli_error($conn);
