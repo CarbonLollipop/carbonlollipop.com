@@ -1,6 +1,8 @@
 const discord = document.getElementById("discord");
+const button = document.getElementById("button");
 const hint = document.getElementById("hint");
-const main = document.getElementsByTagName('main')[0];
+const main = document.getElementsByTagName("main")[0];
+const audio = new Audio("chien.mp3");
 
 discord.addEventListener("click", () => {
     navigator.clipboard.writeText("CarbonLollipop#9880");
@@ -12,7 +14,12 @@ discord.addEventListener("click", () => {
     }, 1000);
 })
 
-document.addEventListener("mousemove", function(event) {
+button.addEventListener("click", () => {
+    audio.play();
+    document.body.remove();
+})
+
+document.addEventListener("mousemove", () => {
 
     var relativeX = event.clientX - window.innerWidth / 2;
     var relativeY = event.clientY - window.innerHeight / 2;
