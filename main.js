@@ -10,7 +10,7 @@ discord.addEventListener("click", () => {
     return;
     hint.innerHTML = "copied!";
     setTimeout(() => {
-        hint.innerText = "click to copy to clipboard";
+        hint.innerText = "";
     }, 1000);
 })
 
@@ -19,13 +19,8 @@ button.addEventListener("click", () => {
     document.body.remove();
 })
 
-document.addEventListener("mousemove", () => {
-
-    var relativeX = event.clientX - window.innerWidth / 2;
-    var relativeY = event.clientY - window.innerHeight / 2;
-
-    relativeX /= -15;
-    relativeY /= -15;
-
-    main.style.boxShadow = relativeX + "px " + relativeY + "px 0 #000";
-});
+if(!navigator.userAgentData.mobile) {
+    document.addEventListener("mousemove", () => {
+        main.style.boxShadow = (event.clientX - window.innerWidth / 2) / -15 + "px " + (event.clientY - window.innerHeight / 2) / -15 + "px 0 #000";
+    });
+}
