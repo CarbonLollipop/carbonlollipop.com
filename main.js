@@ -15,8 +15,10 @@ discord.addEventListener("click", () => {
 })
 
 button.addEventListener("click", () => {
-    audio.play();
-    document.body.remove();
+    setTimeout(() => {
+        audio.play();
+        document.body.remove();
+    }, Math.floor(Math.random()*1000));
 })
 
 if(!navigator.userAgentData.mobile) {
