@@ -1,11 +1,13 @@
-const discord = document.getElementById("discord");
-const button = document.getElementById("button");
-const hint = document.getElementById("hint");
-const main = document.getElementsByTagName("main")[0];
-const audio = new Audio("chien.mp3");
+const TAG = "6900";
+
+discord = document.getElementById("discord");
+button = document.getElementById("button");
+hint = document.getElementById("hint");
+main = document.getElementsByTagName("main")[0];
+audio = new Audio("chien.mp3");
 
 discord.addEventListener("click", () => {
-    navigator.clipboard.writeText("CarbonLollipop#9880");
+    navigator.clipboard.writeText("CarbonLollipop#" + TAG);
     if(hint.innerHTML == "copied!")
     return;
     hint.innerHTML = "copied!";
