@@ -1,5 +1,3 @@
-const TAG = "6900";
-
 discord = document.getElementById("discord");
 button = document.getElementById("button");
 hint = document.getElementById("hint");
@@ -7,7 +5,7 @@ main = document.getElementsByTagName("main")[0];
 audio = new Audio("chien.mp3");
 
 discord.addEventListener("click", () => {
-    navigator.clipboard.writeText("CarbonLollipop#" + TAG);
+    navigator.clipboard.writeText("carbonlollipop");
     if(hint.innerHTML == "copied!")
     return;
     hint.innerHTML = "copied!";
